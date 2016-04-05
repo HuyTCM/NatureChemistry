@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Electron.h"
+#import "NCConstants.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    Electron *electron = [[Electron alloc] init];
+    NSLog(@"Coblum %@",[NSNumber numberWithDouble:(NC_Coulomb * [electron.electricCharge doubleValue])]);
 }
 
 - (void)didReceiveMemoryWarning {

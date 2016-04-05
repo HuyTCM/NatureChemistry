@@ -10,4 +10,11 @@
 
 @implementation Electron
 
+-(instancetype)init {
+    self.weight = [NSNumber numberWithDouble:(9.109382 * pow(10, -31))];
+    self.electricCharge = [NSNumber numberWithFloat:(-1)];
+    
+    return [super init];
+}
+
 @end

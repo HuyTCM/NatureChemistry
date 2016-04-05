@@ -10,4 +10,7 @@
 
 @interface ElementaryParticle : NSObject
 
+@property NSNumber *weight;
+@property NSNumber *electricCharge;
+
 @end

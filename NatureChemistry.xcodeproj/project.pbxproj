@@ -20,6 +20,9 @@
 		54402D721CB3757500C4AAE0 /* Electron.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402D711CB3757500C4AAE0 /* Electron.m */; };
 		54402D751CB375E000C4AAE0 /* CompositeParticles.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402D741CB375E000C4AAE0 /* CompositeParticles.m */; };
 		54402D781CB3769200C4AAE0 /* Neutron.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402D771CB3769200C4AAE0 /* Neutron.m */; };
+		9227622E1CB39D7B00B4F35F /* Quark.m in Sources */ = {isa = PBXBuildFile; fileRef = 9227622D1CB39D7B00B4F35F /* Quark.m */; };
+		922762311CB39EA200B4F35F /* uQuark.m in Sources */ = {isa = PBXBuildFile; fileRef = 922762301CB39EA200B4F35F /* uQuark.m */; };
+		922762341CB39F3900B4F35F /* dQuark.m in Sources */ = {isa = PBXBuildFile; fileRef = 922762331CB39F3900B4F35F /* dQuark.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,13 @@
 		54402D741CB375E000C4AAE0 /* CompositeParticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeParticles.m; sourceTree = "<group>"; };
 		54402D761CB3769200C4AAE0 /* Neutron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neutron.h; sourceTree = "<group>"; };
 		54402D771CB3769200C4AAE0 /* Neutron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Neutron.m; sourceTree = "<group>"; };
+		922762271CB3958400B4F35F /* NCConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCConstants.h; sourceTree = "<group>"; };
+		9227622C1CB39D7B00B4F35F /* Quark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quark.h; sourceTree = "<group>"; };
+		9227622D1CB39D7B00B4F35F /* Quark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quark.m; sourceTree = "<group>"; };
+		9227622F1CB39EA200B4F35F /* uQuark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uQuark.h; sourceTree = "<group>"; };
+		922762301CB39EA200B4F35F /* uQuark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uQuark.m; sourceTree = "<group>"; };
+		922762321CB39F3900B4F35F /* dQuark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dQuark.h; sourceTree = "<group>"; };
+		922762331CB39F3900B4F35F /* dQuark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dQuark.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,23 +128,16 @@
 			children = (
 				54402D371CB35FDF00C4AAE0 /* AppDelegate.h */,
 				54402D381CB35FDF00C4AAE0 /* AppDelegate.m */,
+				54402D401CB35FDF00C4AAE0 /* Assets.xcassets */,
+				9227622A1CB39B8400B4F35F /* Commons */,
+				922762291CB39B4000B4F35F /* CompositeParticles */,
+				922762281CB39B2700B4F35F /* ElementaryParticle */,
+				54402D451CB35FDF00C4AAE0 /* Info.plist */,
+				54402D421CB35FDF00C4AAE0 /* LaunchScreen.storyboard */,
+				54402D3D1CB35FDF00C4AAE0 /* Main.storyboard */,
+				54402D341CB35FDF00C4AAE0 /* Supporting Files */,
 				54402D3A1CB35FDF00C4AAE0 /* ViewController.h */,
 				54402D3B1CB35FDF00C4AAE0 /* ViewController.m */,
-				54402D3D1CB35FDF00C4AAE0 /* Main.storyboard */,
-				54402D401CB35FDF00C4AAE0 /* Assets.xcassets */,
-				54402D421CB35FDF00C4AAE0 /* LaunchScreen.storyboard */,
-				54402D451CB35FDF00C4AAE0 /* Info.plist */,
-				54402D341CB35FDF00C4AAE0 /* Supporting Files */,
-				54402D671CB361DF00C4AAE0 /* Proton.h */,
-				54402D681CB361DF00C4AAE0 /* Proton.m */,
-				54402D6D1CB3706200C4AAE0 /* ElementaryParticle.h */,
-				54402D6E1CB3706200C4AAE0 /* ElementaryParticle.m */,
-				54402D701CB3757500C4AAE0 /* Electron.h */,
-				54402D711CB3757500C4AAE0 /* Electron.m */,
-				54402D731CB375E000C4AAE0 /* CompositeParticles.h */,
-				54402D741CB375E000C4AAE0 /* CompositeParticles.m */,
-				54402D761CB3769200C4AAE0 /* Neutron.h */,
-				54402D771CB3769200C4AAE0 /* Neutron.m */,
 			);
 			path = NatureChemistry;
 			sourceTree = "<group>";
@@ -163,6 +166,44 @@
 				54402D5B1CB35FDF00C4AAE0 /* Info.plist */,
 			);
 			path = NatureChemistryUITests;
+			sourceTree = "<group>";
+		};
+		922762281CB39B2700B4F35F /* ElementaryParticle */ = {
+			isa = PBXGroup;
+			children = (
+				54402D6D1CB3706200C4AAE0 /* ElementaryParticle.h */,
+				54402D6E1CB3706200C4AAE0 /* ElementaryParticle.m */,
+				54402D701CB3757500C4AAE0 /* Electron.h */,
+				54402D711CB3757500C4AAE0 /* Electron.m */,
+				9227622C1CB39D7B00B4F35F /* Quark.h */,
+				9227622D1CB39D7B00B4F35F /* Quark.m */,
+				9227622F1CB39EA200B4F35F /* uQuark.h */,
+				922762301CB39EA200B4F35F /* uQuark.m */,
+				922762321CB39F3900B4F35F /* dQuark.h */,
+				922762331CB39F3900B4F35F /* dQuark.m */,
+			);
+			name = ElementaryParticle;
+			sourceTree = "<group>";
+		};
+		922762291CB39B4000B4F35F /* CompositeParticles */ = {
+			isa = PBXGroup;
+			children = (
+				54402D731CB375E000C4AAE0 /* CompositeParticles.h */,
+				54402D741CB375E000C4AAE0 /* CompositeParticles.m */,
+				54402D761CB3769200C4AAE0 /* Neutron.h */,
+				54402D771CB3769200C4AAE0 /* Neutron.m */,
+				54402D671CB361DF00C4AAE0 /* Proton.h */,
+				54402D681CB361DF00C4AAE0 /* Proton.m */,
+			);
+			name = CompositeParticles;
+			sourceTree = "<group>";
+		};
+		9227622A1CB39B8400B4F35F /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				922762271CB3958400B4F35F /* NCConstants.h */,
+			);
+			name = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922762311CB39EA200B4F35F /* uQuark.m in Sources */,
+				9227622E1CB39D7B00B4F35F /* Quark.m in Sources */,
+				922762341CB39F3900B4F35F /* dQuark.m in Sources */,
 				54402D3C1CB35FDF00C4AAE0 /* ViewController.m in Sources */,
 				54402D691CB361DF00C4AAE0 /* Proton.m in Sources */,
 				54402D391CB35FDF00C4AAE0 /* AppDelegate.m in Sources */,
@@ -446,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NatureChemistry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huytcm.NatureChemistry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NatureChemistry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huytcm.NatureChemistry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -468,6 +514,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NatureChemistryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huytcm.NatureChemistryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,6 +527,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NatureChemistryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huytcm.NatureChemistryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = NatureChemistryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huytcm.NatureChemistryUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = NatureChemistryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huytcm.NatureChemistryUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,6 +578,7 @@
 				54402D601CB35FDF00C4AAE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54402D611CB35FDF00C4AAE0 /* Build configuration list for PBXNativeTarget "NatureChemistryTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +587,7 @@
 				54402D631CB35FDF00C4AAE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54402D641CB35FDF00C4AAE0 /* Build configuration list for PBXNativeTarget "NatureChemistryUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +596,7 @@
 				54402D661CB35FDF00C4AAE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
