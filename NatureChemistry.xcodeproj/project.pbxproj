@@ -17,6 +17,9 @@
 		54402D5A1CB35FDF00C4AAE0 /* NatureChemistryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402D591CB35FDF00C4AAE0 /* NatureChemistryUITests.m */; };
 		54402D691CB361DF00C4AAE0 /* Proton.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402D681CB361DF00C4AAE0 /* Proton.m */; };
 		54402D6F1CB3706200C4AAE0 /* ElementaryParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402D6E1CB3706200C4AAE0 /* ElementaryParticle.m */; };
+		54402D721CB3757500C4AAE0 /* Electron.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402D711CB3757500C4AAE0 /* Electron.m */; };
+		54402D751CB375E000C4AAE0 /* CompositeParticles.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402D741CB375E000C4AAE0 /* CompositeParticles.m */; };
+		54402D781CB3769200C4AAE0 /* Neutron.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402D771CB3769200C4AAE0 /* Neutron.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		54402D681CB361DF00C4AAE0 /* Proton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Proton.m; sourceTree = "<group>"; };
 		54402D6D1CB3706200C4AAE0 /* ElementaryParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementaryParticle.h; sourceTree = "<group>"; };
 		54402D6E1CB3706200C4AAE0 /* ElementaryParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementaryParticle.m; sourceTree = "<group>"; };
+		54402D701CB3757500C4AAE0 /* Electron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Electron.h; sourceTree = "<group>"; };
+		54402D711CB3757500C4AAE0 /* Electron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Electron.m; sourceTree = "<group>"; };
+		54402D731CB375E000C4AAE0 /* CompositeParticles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeParticles.h; sourceTree = "<group>"; };
+		54402D741CB375E000C4AAE0 /* CompositeParticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeParticles.m; sourceTree = "<group>"; };
+		54402D761CB3769200C4AAE0 /* Neutron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neutron.h; sourceTree = "<group>"; };
+		54402D771CB3769200C4AAE0 /* Neutron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Neutron.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +129,12 @@
 				54402D681CB361DF00C4AAE0 /* Proton.m */,
 				54402D6D1CB3706200C4AAE0 /* ElementaryParticle.h */,
 				54402D6E1CB3706200C4AAE0 /* ElementaryParticle.m */,
+				54402D701CB3757500C4AAE0 /* Electron.h */,
+				54402D711CB3757500C4AAE0 /* Electron.m */,
+				54402D731CB375E000C4AAE0 /* CompositeParticles.h */,
+				54402D741CB375E000C4AAE0 /* CompositeParticles.m */,
+				54402D761CB3769200C4AAE0 /* Neutron.h */,
+				54402D771CB3769200C4AAE0 /* Neutron.m */,
 			);
 			path = NatureChemistry;
 			sourceTree = "<group>";
@@ -283,8 +298,11 @@
 				54402D3C1CB35FDF00C4AAE0 /* ViewController.m in Sources */,
 				54402D691CB361DF00C4AAE0 /* Proton.m in Sources */,
 				54402D391CB35FDF00C4AAE0 /* AppDelegate.m in Sources */,
+				54402D721CB3757500C4AAE0 /* Electron.m in Sources */,
 				54402D361CB35FDF00C4AAE0 /* main.m in Sources */,
+				54402D751CB375E000C4AAE0 /* CompositeParticles.m in Sources */,
 				54402D6F1CB3706200C4AAE0 /* ElementaryParticle.m in Sources */,
+				54402D781CB3769200C4AAE0 /* Neutron.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

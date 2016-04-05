@@ -1,5 +1,5 @@
 //
-//  Proton.h
+//  Neutron.h
 //  NatureChemistry
 //
 //  Created by HuyTCM on 4/5/16.
@@ -8,6 +8,6 @@
 
 #import "CompositeParticles.h"
 
-@interface Proton : CompositeParticles
+@interface Neutron : CompositeParticles
 
 @end

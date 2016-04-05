@@ -12,11 +12,9 @@
 @end
 
 @implementation Proton
-@synthesize weight;
-@synthesize electricCharge;
 
 -(instancetype)init {
-    self.weight = [NSNumber numberWithDouble:(1.6726 * pow(10, -27))];
+    self.weight = [NSNumber numberWithDouble:(1.672622 * pow(10, -27))];
     self.electricCharge = [NSNumber numberWithFloat:(2/3 + 2/3 + (-1/3))]; // 3 quark: 2u (2/3) + 1d (-1/3)
     
     return [super init];
